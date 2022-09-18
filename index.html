@@ -80,8 +80,8 @@
 
     // TODO: register event onkeypress / addEventListener untuk input
     // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
-    input.addEventListener("keyup", event => {
-      if (event.keyCode === 13) {
+    input.addEventListener("keyup", e => {
+      if (e.keyCode === 13) {
         fnClickHandler(input.value)
       }
     });
