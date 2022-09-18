@@ -73,7 +73,9 @@
 
     // TODO: register event onclick / addEventListener untuk button
     // akan menjalankan fungsi fnClickHandler
-    button.addEventListener("click", fnClickHandler)
+    button.addEventListener("click", e => {
+      fnClickHandler();
+    })
 
     // TODO: register event onkeypress / addEventListener untuk input
     // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
