@@ -66,10 +66,10 @@
     // Fungsi yang digunakan untuk menambahkan tulisan
     // Jangan ubah cara deklarasi fungsinya, cukup isi saja
     function fnClickHandler(toDoItem) {
-      let text = document.createElement("li"); // Create a <li> node
-      text.innerHTML = toDoItem
-      output.appendChild(text);
-      input.value = ''
+      const list = document.createElement('li');
+      list.append(toDoItem);
+      output.appendChild(list);
+      input.value = "";
     }
 
     // TODO: register event onclick / addEventListener untuk button
