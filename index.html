@@ -67,7 +67,7 @@
     // Jangan ubah cara deklarasi fungsinya, cukup isi saja
     function fnClickHandler(toDoItem) {
       let text = document.createElement("li"); // Create a <li> node
-      text.innerHTML = `<li>${input.value}</li>`
+      text.innerText = `${input.value}`
       output.appendChild(text);
     }
 
