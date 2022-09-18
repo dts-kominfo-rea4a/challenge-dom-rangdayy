@@ -74,13 +74,13 @@
 
     // TODO: register event onclick / addEventListener untuk button
     // akan menjalankan fungsi fnClickHandler
-    button.addEventListener("click", e => {
+    button.addEventListener("click", event => {
       fnClickHandler(input.value);
     })
 
     // TODO: register event onkeypress / addEventListener untuk input
     // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
-    input.addEventListener("keyup", function (event) {
+    input.addEventListener("keyup", event => {
       if (event.keyCode === 13) {
         fnClickHandler(input.value)
       }
