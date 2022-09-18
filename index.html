@@ -74,15 +74,15 @@
 
     // TODO: register event onclick / addEventListener untuk button
     // akan menjalankan fungsi fnClickHandler
-    button.addEventListener("click", event => {
+    button.addEventListener('click', e => {
       fnClickHandler(input.value);
-    })
+    });
 
     // TODO: register event onkeypress / addEventListener untuk input
     // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
-    input.addEventListener("keyup", e => {
-      if (e.keyCode == 13) {
-        fnClickHandler(input.value)
+    input.addEventListener('keypress', e => {
+      if (e.key.toLowerCase() == "Enter".toLowerCase()) {
+        fnClickHandler(input.value);
       }
     });
   </script>
